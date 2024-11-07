@@ -9,9 +9,6 @@
     "env": {
       "COMPOSER_HOME": "/tmp/composer"
     },
-    "php": {
-      "version": "8.1"
-    },
     "routes": [
       {
         "src": "/(.*)",
