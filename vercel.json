@@ -1,19 +1,22 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "composer.json",
-        "use": "@vercel/php"
-      }
-    ],
-    "env": {
-      "COMPOSER_HOME": "/tmp/composer"
-    },
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.php"
-      }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ],
+  "env": {
+    "APP_NAME": "Laravel",
+    "APP_ENV": "production",  
+    "APP_KEY": "base64:GFQVBUL/ZNBs5TIHEsXspjGuSvOIuu/0W/wkGiVVUb8=",
+    "APP_DEBUG": "false",  
+    "APP_URL": "https://kardcaminoaltrono.vercel.app/"
   }
-  
+}
